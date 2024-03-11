@@ -1,0 +1,9 @@
+﻿<h2>Order Confirmation</h2>
+<p>User: @ViewBag.UserName, Age: @ViewBag.UserAge</p>
+<p>Ordered Quantity: @ViewBag.OrderQuantity</p>
+<ul>
+    @foreach (var product in Model)
+    {
+        <li>@product.Name - $@product.Price - Quantity: @product.Quantity</li>
+    }
+</ul>
